@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+.landing {
+    background-image: url('./images/landing.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+.landing-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.landing-content {
+    position: relative;
+    z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+    .landing-content {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+.footer-social-link {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 16px;
+}
+
+.footer-social-icon,
+.footer-social-text {
+    vertical-align: middle;
+}
+
+.footer-social-icon {
+    border: 1px solid rgb(152, 152, 152);
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.product-column {
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+}
+
+.product-column.fade-out {
+    opacity: 0;
+}
+
+.profile-image {
+    width: 300px;
+    border-radius: 345px;
+    display: flex;
+    height: 300px;
+    margin: auto;
+    display: block;
+}
+
+.profile-text {
+    text-align: center;
+    font-size: 3rem;
+    padding: 0.5rem;
+}
+
+.typeText::after {
+    content: "|";
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% {opacity: 1;}
+    50% {opacity: 0;}
+  }
+
+.tab {
+    margin-left: 350px;
+}
+
+
